@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "e-commerce-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "An e-commerce website that offers a wide range of basic clothing items.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.8.1"
+  }
 }
