@@ -167,7 +167,7 @@ db.once('open', async () => {
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
             image: 'white-tshirt.jpg',
-            category: categories[3]._id,
+            category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
             stock: {
@@ -181,7 +181,7 @@ db.once('open', async () => {
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
             image: 'white-tshirt.jpg',
-            category: categories[3]._id,
+            category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
             stock: {
@@ -195,7 +195,7 @@ db.once('open', async () => {
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
             image: 'white-tshirt.jpg',
-            category: categories[3]._id,
+            category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
             stock: {
@@ -209,7 +209,7 @@ db.once('open', async () => {
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
             image: 'white-tshirt.jpg',
-            category: categories[3]._id,
+            category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
             stock: {
@@ -223,7 +223,7 @@ db.once('open', async () => {
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
             image: 'white-tshirt.jpg',
-            category: categories[3]._id,
+            category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
             stock: {
@@ -232,8 +232,155 @@ db.once('open', async () => {
                 "L": 225, 
             }
           },
-          
 
+        //women's clothes: tshirts
+        {
+            name: 'Khaki Cotton T-shirt',
+            description:
+              'Crew neck thsirt in soft cotton jersey',
+            image: 'white-tshirt.jpg',
+            category: categories[0]._id,
+            price: 8.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 230, 
+                "M": 115, 
+                "L": 320, 
+            }
+          },
+        {
+            name: 'Pink Cotton T-shirt',
+            description:
+              'Crew neck thsirt in soft cotton jersey',
+            image: 'white-tshirt.jpg',
+            category: categories[0]._id,
+            price: 8.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 230, 
+                "M": 115, 
+                "L": 320, 
+            }
+        },
+        {
+            name: 'Green Cotton T-shirt',
+            description:
+              'Crew neck thsirt in soft cotton jersey',
+            image: 'white-tshirt.jpg',
+            category: categories[0]._id,
+            price: 8.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 230, 
+                "M": 115, 
+                "L": 320, 
+            }
+        },
+        {
+            name: 'Yellow Cotton T-shirt',
+            description:
+              'Crew neck thsirt in soft cotton jersey',
+            image: 'white-tshirt.jpg',
+            category: categories[0]._id,
+            price: 8.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 230, 
+                "M": 115, 
+                "L": 320, 
+            }
+        },
+        {
+            name: 'Blue Cotton T-shirt',
+            description:
+              'Crew neck thsirt in soft cotton jersey',
+            image: 'white-tshirt.jpg',
+            category: categories[0]._id,
+            price: 8.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 230, 
+                "M": 115, 
+                "L": 320, 
+            }
+        },
+
+        //women's clothes: pants
+
+        {
+            name: 'Black Cigarette Pants',
+            description:
+              'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
+            image: 'white-tshirt.jpg',
+            category: categories[1]._id,
+            price: 27.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 222, 
+                "M": 150, 
+                "L": 95, 
+            }
+        },
+        {
+            name: 'Beige Cigarette Pants',
+            description:
+              'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
+            image: 'white-tshirt.jpg',
+            category: categories[1]._id,
+            price: 27.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 222, 
+                "M": 150, 
+                "L": 95, 
+            }
+        },
+        {
+            name: 'Navy blue Cigarette Pants',
+            description:
+              'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
+            image: 'white-tshirt.jpg',
+            category: categories[1]._id,
+            price: 27.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 222, 
+                "M": 150, 
+                "L": 95, 
+            }
+        },
+        {
+            name: 'Light gray Cigarette Pants',
+            description:
+              'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
+            image: 'white-tshirt.jpg',
+            category: categories[1]._id,
+            price: 27.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 222, 
+                "M": 150, 
+                "L": 95, 
+            }
+        },
+        {
+            name: 'Dark gray Cigarette Pants',
+            description:
+              'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
+            image: 'white-tshirt.jpg',
+            category: categories[1]._id,
+            price: 27.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 222, 
+                "M": 150, 
+                "L": 95, 
+            }
+        },
+
+        //women's clothes: sweaters
+
+     
     ]);
   
 
