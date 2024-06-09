@@ -379,12 +379,78 @@ db.once('open', async () => {
         },
 
         //women's clothes: sweaters
-
+        {
+            name: 'Black Oversized sweater',
+            description:
+              'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
+            image: 'white-tshirt.jpg',
+            category: categories[2]._id,
+            price: 25.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 452, 
+                "M": 100, 
+                "L": 365, 
+            }
+        },
+        {
+            name: 'Gray oversized sweater',
+            description:
+              'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
+            image: 'white-tshirt.jpg',
+            category: categories[2]._id,
+            price: 25.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 452, 
+                "M": 100, 
+                "L": 365, 
+            }
+        },
+        {
+            name: 'Navy blue oversized sweater',
+            description:
+              'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
+            image: 'white-tshirt.jpg',
+            category: categories[2]._id,
+            price: 25.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 452, 
+                "M": 100, 
+                "L": 365, 
+            }
+        },
+        {
+            name: 'Beige oversized sweater',
+            description:
+              'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
+            image: 'white-tshirt.jpg',
+            category: categories[2]._id,
+            price: 25.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 452, 
+                "M": 100, 
+                "L": 365, 
+            }
+        },
+        {
+            name: 'Striped oversized sweater',
+            description:
+              'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
+            image: 'white-tshirt.jpg',
+            category: categories[2]._id,
+            price: 25.99,
+            sizes: ["S" , "M", "L"],
+            stock: {
+                "S": 452, 
+                "M": 100, 
+                "L": 365, 
+            }
+        },
      
     ]);
-  
-
-  
   
   });
   
