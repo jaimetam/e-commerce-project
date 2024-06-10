@@ -238,7 +238,7 @@ db.once('open', async () => {
             name: 'Khaki Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'white-tshirt.jpg',
+            image: 'womens-khaki-tshirt.png',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
@@ -252,7 +252,7 @@ db.once('open', async () => {
             name: 'Pink Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'white-tshirt.jpg',
+            image: 'womens-pink-tshirt.png',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
@@ -266,7 +266,7 @@ db.once('open', async () => {
             name: 'Green Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'white-tshirt.jpg',
+            image: 'womens-green-tshirt.png',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
@@ -280,7 +280,7 @@ db.once('open', async () => {
             name: 'Yellow Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'white-tshirt.jpg',
+            image: 'womens-yellow-tshirt.png',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
@@ -294,7 +294,7 @@ db.once('open', async () => {
             name: 'Blue Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'white-tshirt.jpg',
+            image: 'womens-blue-tshirt',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
