@@ -94,7 +94,7 @@ db.once('open', async () => {
             name: 'Black slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-black-pants.jpeg',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
@@ -108,7 +108,7 @@ db.once('open', async () => {
             name: 'Blue slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-blue-pants.png',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
@@ -119,10 +119,10 @@ db.once('open', async () => {
             }
           },
           {
-            name: 'Green slim-fit pants',
+            name: 'Khaki green slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-green-pants.jpeg',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
@@ -136,7 +136,7 @@ db.once('open', async () => {
             name: 'Beige slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-beige-pants.jpeg',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
@@ -150,7 +150,7 @@ db.once('open', async () => {
             name: 'Light gray slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-light-gray-pants',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
