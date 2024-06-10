@@ -311,7 +311,7 @@ db.once('open', async () => {
             name: 'Black Cigarette Pants',
             description:
               'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-black-pants.png',
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
@@ -325,7 +325,7 @@ db.once('open', async () => {
             name: 'Beige Cigarette Pants',
             description:
               'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-beige-pants.png',
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
@@ -339,7 +339,7 @@ db.once('open', async () => {
             name: 'Navy blue Cigarette Pants',
             description:
               'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-blue-pants.png',
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
@@ -353,7 +353,7 @@ db.once('open', async () => {
             name: 'Light gray Cigarette Pants',
             description:
               'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-light-gray-pants.png',
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
@@ -367,7 +367,7 @@ db.once('open', async () => {
             name: 'Dark gray Cigarette Pants',
             description:
               'Crew neck thsirt in soft cotton jerseAnkle-length cigarette pants in stretch fabric with a standard waist. Model with elastic waistband and hidden zip and hook closure. Side pockets, decorative back pockets, and tapered legs toward the ankles.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-dark-gray-pants.png',
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
@@ -383,7 +383,7 @@ db.once('open', async () => {
             name: 'Black Oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-black-sweater.jpeg',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -397,7 +397,7 @@ db.once('open', async () => {
             name: 'Gray oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-gray-sweater',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -411,7 +411,7 @@ db.once('open', async () => {
             name: 'Navy blue oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-blue-sweater',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -425,7 +425,7 @@ db.once('open', async () => {
             name: 'Beige oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-beige-sweater.jpeg',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -439,7 +439,7 @@ db.once('open', async () => {
             name: 'Striped oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'womens-striped-sweater.jpeg',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
