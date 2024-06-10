@@ -50,7 +50,7 @@ db.once('open', async () => {
         name: 'Light gray T-shirt',
         description:
           'Regular-fit, comfortable T-shirt in lightweight cotton jersey with a classic silhouette. Round, ribbed neck and a straight-cut hem.',
-        image: 'white-tshirt.jpg',
+        image: 'mens-light-gray-shirt.png',
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
@@ -64,7 +64,7 @@ db.once('open', async () => {
         name: 'Dark gray T-shirt',
         description:
           'Regular-fit, comfortable T-shirt in lightweight cotton jersey with a classic silhouette. Round, ribbed neck and a straight-cut hem.',
-        image: 'white-tshirt.jpg',
+        image: 'mens-dark-gray-shirt.png',
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
@@ -78,7 +78,7 @@ db.once('open', async () => {
         name: 'Beige T-shirt',
         description:
           'Regular-fit, comfortable T-shirt in lightweight cotton jersey with a classic silhouette. Round, ribbed neck and a straight-cut hem.',
-        image: 'white-tshirt.jpg',
+        image: 'mens-beige-tshirt.png',
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
