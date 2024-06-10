@@ -150,13 +150,13 @@ db.once('open', async () => {
             name: 'Light gray slim-fit pants',
             description:
               'Five-pocket cotton twill pants. Model with zipper and button closure.',
-            image: 'mens-light-gray-pants',
+            image: 'mens-light-gray-pants.png',
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
             stock: {
                 "S": 110, 
-                "M": 110, 
+                "M": 110,
                 "L": 110, 
             }
           },
@@ -166,7 +166,7 @@ db.once('open', async () => {
             name: 'Navy blue merino wool sweater',
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-navy-blue-sweater.png',
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
@@ -180,7 +180,7 @@ db.once('open', async () => {
             name: 'Gray merino wool sweater',
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-gray-sweater.png',
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
@@ -194,7 +194,7 @@ db.once('open', async () => {
             name: 'Brown merino wool sweater',
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-brown-sweater.png',
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
@@ -208,7 +208,7 @@ db.once('open', async () => {
             name: 'Black merino wool sweater',
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-black-sweater.png',
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
@@ -222,7 +222,7 @@ db.once('open', async () => {
             name: 'Beige merino wool sweater',
             description:
               'Slim-fit sweater in soft merino wool. Crew neck model with long sleeves. Ribbed trim around the neck, cuffs, and hem.',
-            image: 'white-tshirt.jpg',
+            image: 'mens-beige-sweater.png',
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
