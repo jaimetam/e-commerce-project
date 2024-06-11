@@ -8,7 +8,7 @@ db.once('open', async () => {
     await cleanDB('User', 'users');
   
     const categories = await Category.insertMany([
-      { name: 'Tshirts' },
+      { name: 'T-shirts' },
       { name: 'Pants' },
       { name: 'Sweaters' },
     ]);
@@ -26,11 +26,7 @@ db.once('open', async () => {
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
-        stock: {
-            "S": 150, 
-            "M": 150, 
-            "L": 150, 
-        }
+        
       },
       {
         name: 'Black T-shirt',
@@ -40,11 +36,7 @@ db.once('open', async () => {
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
-        stock: {
-            "S": 150, 
-            "M": 150, 
-            "L": 150, 
-        }
+        
       },
       {
         name: 'Light gray T-shirt',
@@ -54,11 +46,7 @@ db.once('open', async () => {
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
-        stock: {
-            "S": 150, 
-            "M": 150, 
-            "L": 150, 
-        }
+        
       },
       {
         name: 'Dark gray T-shirt',
@@ -68,11 +56,7 @@ db.once('open', async () => {
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
-        stock: {
-            "S": 150, 
-            "M": 150, 
-            "L": 150, 
-        }
+        
       },
       {
         name: 'Beige T-shirt',
@@ -82,11 +66,7 @@ db.once('open', async () => {
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
-        stock: {
-            "S": 150, 
-            "M": 150, 
-            "L": 150, 
-        }
+        
       },
 
         //men's clothes: pants
@@ -98,11 +78,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110, 
-                "L": 110, 
-            }
+            
           },
           {
             name: 'Blue slim-fit pants',
@@ -112,11 +88,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110, 
-                "L": 110, 
-            }
+            
           },
           {
             name: 'Khaki green slim-fit pants',
@@ -126,11 +98,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110, 
-                "L": 110, 
-            }
+            
           },
           {
             name: 'Beige slim-fit pants',
@@ -140,11 +108,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110, 
-                "L": 110, 
-            }
+            
           },
           {
             name: 'Light gray slim-fit pants',
@@ -154,11 +118,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 19.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110,
-                "L": 110, 
-            }
+           
           },
 
         //men's clothes: sweaters
@@ -170,11 +130,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 225, 
-                "M": 110, 
-                "L": 225, 
-            }
+           
           },
           {
             name: 'Gray merino wool sweater',
@@ -184,11 +140,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 110, 
-                "M": 110, 
-                "L": 110, 
-            }
+            
           },
           {
             name: 'Brown merino wool sweater',
@@ -198,11 +150,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 225, 
-                "M": 110, 
-                "L": 225, 
-            }
+           
           },
           {
             name: 'Black merino wool sweater',
@@ -212,11 +160,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 225, 
-                "M": 110, 
-                "L": 225, 
-            }
+            
           },
           {
             name: 'Beige merino wool sweater',
@@ -226,11 +170,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 23.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 225, 
-                "M": 110, 
-                "L": 225, 
-            }
+            
           },
 
         //women's clothes: tshirts
@@ -242,11 +182,7 @@ db.once('open', async () => {
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 230, 
-                "M": 115, 
-                "L": 320, 
-            }
+            
           },
         {
             name: 'Pink Cotton T-shirt',
@@ -256,11 +192,7 @@ db.once('open', async () => {
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 230, 
-                "M": 115, 
-                "L": 320, 
-            }
+            
         },
         {
             name: 'Green Cotton T-shirt',
@@ -270,11 +202,7 @@ db.once('open', async () => {
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 230, 
-                "M": 115, 
-                "L": 320, 
-            }
+           
         },
         {
             name: 'Yellow Cotton T-shirt',
@@ -284,11 +212,7 @@ db.once('open', async () => {
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 230, 
-                "M": 115, 
-                "L": 320, 
-            }
+            
         },
         {
             name: 'Blue Cotton T-shirt',
@@ -298,11 +222,7 @@ db.once('open', async () => {
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 230, 
-                "M": 115, 
-                "L": 320, 
-            }
+           
         },
 
         //women's clothes: pants
@@ -315,11 +235,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 222, 
-                "M": 150, 
-                "L": 95, 
-            }
+            
         },
         {
             name: 'Beige Cigarette Pants',
@@ -329,11 +245,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 222, 
-                "M": 150, 
-                "L": 95, 
-            }
+           
         },
         {
             name: 'Navy blue Cigarette Pants',
@@ -343,11 +255,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 222, 
-                "M": 150, 
-                "L": 95, 
-            }
+           
         },
         {
             name: 'Light gray Cigarette Pants',
@@ -357,11 +265,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 222, 
-                "M": 150, 
-                "L": 95, 
-            }
+            
         },
         {
             name: 'Dark gray Cigarette Pants',
@@ -371,11 +275,7 @@ db.once('open', async () => {
             category: categories[1]._id,
             price: 27.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 222, 
-                "M": 150, 
-                "L": 95, 
-            }
+          
         },
 
         //women's clothes: sweaters
@@ -387,11 +287,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 452, 
-                "M": 100, 
-                "L": 365, 
-            }
+           
         },
         {
             name: 'Gray oversized sweater',
@@ -401,11 +297,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 452, 
-                "M": 100, 
-                "L": 365, 
-            }
+          
         },
         {
             name: 'Navy blue oversized sweater',
@@ -415,11 +307,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 452, 
-                "M": 100, 
-                "L": 365, 
-            }
+            
         },
         {
             name: 'Beige oversized sweater',
@@ -429,11 +317,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 452, 
-                "M": 100, 
-                "L": 365, 
-            }
+            
         },
         {
             name: 'Striped oversized sweater',
@@ -443,14 +327,30 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
-            stock: {
-                "S": 452, 
-                "M": 100, 
-                "L": 365, 
-            }
+           
         },
      
     ]);
   
+    console.log('products seeded');
+
+
+
+    await User.create({
+        firstName: 'John',
+        lastName: 'Doe',
+        email: 'johndoe@hotmailemail.com',
+        password: '12345',
+        orders: [
+            {
+                products:[products[1]._id]
+            }
+        ]
+    });
+
+    console.log('users seeded');
+
+    
+
   });
   
