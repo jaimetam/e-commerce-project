@@ -21,18 +21,18 @@ _Placeholder text._
 
 ## Credits
 
-This project was made possible with the help of:
-* Our coding instructor, [Marco Monter]().
-* The [H&M website](https://www2.hm.com/es_mx/index.html) for client-displayed data.
-* The `ChatGPT` AI developed by __Open AI__.
-* The `Xpert Learning Assistant` AI developed by __EdX__.
-
 MinimalCLoth©️  was conceptualized and programmed by:
 * [Maria Corona](https://github.com/m13corona).
 * [Logan McDaniel](https://github.com/lsmcd).
 * [Marcos Munoz](https://github.com/marcusmr15).
 * [Jaime Tames](https://github.com/jaimetam).
 * [Martin Vivanco](https://github.com/MartinVF12).
+
+This project was made possible with the help of:
+* Our coding instructor, [Marco Monter](https://github.com/montermarco).
+* The [H&M website](https://www2.hm.com/es_mx/index.html) for client-displayed data.
+* The `ChatGPT` AI developed by __Open AI__.
+* The `Xpert Learning Assistant` AI developed by __EdX__.
 
 ## License
 
