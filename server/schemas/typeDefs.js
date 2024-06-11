@@ -1,78 +1,58 @@
-// Function to parse the schema definitions into the Apollo Server
-const { gql } = require('apollo-server');
+const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type TShirt {
-    id: ID!
-    name: String!
-    size: String!
-    color: String!
-    price: Float!
-  }
-
-  type Pants {
-    id: ID!
-    name: String!
-    size: String!
-    color: String!
-    price: Float!
+  type Category {
+    _id: ID
+    name: String
   }
 
   type Product {
-    id: ID!
-    name: String!
-    category: String!
-    price: Float!
-    stock: Int!
-  }
-
-  type Sweater {
-    id: ID!
-    name: String!
-    size: String!
-    color: String!
-    price: Float!
-  }
-
-  type User {
-    id: ID!
-    username: String!
-    email: String!
-    orders: [Order!]!
-  }
-
-  type Category {
-    id: ID!
-    name: String!
-    products: [Product!]!
+    _id: ID
+    name: String
+    description: String
+    image: String
+    quantity: Int
+    price: Float
+    category: Category
   }
 
   type Order {
-    id: ID!
-    products: [Product!]!
-    total: Float!
-    user: User!
-    status: String!
+    _id: ID
+    purchaseDate: String
+    products: [Product]
+  }
+
+  type User {
+    _id: ID
+    firstName: String
+    lastName: String
+    email: String
+    orders: [Order]
+  }
+
+  type Checkout {
+    session: ID
+  }
+
+  type Auth {
+    token: ID
+    user: User
   }
 
   type Query {
-    tShirts: [TShirt!]!
-    pants: [Pants!]!
-    products: [Product!]!
-    sweaters: [Sweater!]!
-    users: [User!]!
-    categories: [Category!]!
-    orders: [Order!]!
+    categories: [Category]
+    products(category: ID, name: String): [Product]
+    product(_id: ID!): Product
+    user: User
+    order(_id: ID!): Order
+    checkout(products: [ID]!): Checkout
   }
 
   type Mutation {
-    addTShirt(name: String!, size: String!, color: String!, price: Float!): TShirt!
-    addPants(name: String!, size: String!, color: String!, price: Float!): Pants!
-    addProduct(name: String!, category: String!, price: Float!, stock: Int!): Product!
-    addSweater(name: String!, size: String!, color: String!, price: Float!): Sweater!
-    addUser(username: String!, email: String!): User!
-    addCategory(name: String!): Category!
-    addOrder(products: [ID!]!, total: Float!, user: ID!, status: String!): Order!
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    addOrder(products: [ID]!): Order
+    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    login(email: String!, password: String!): Auth
   }
 `;
 
