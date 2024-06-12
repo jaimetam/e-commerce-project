@@ -32,7 +32,7 @@ db.once('open', async () => {
         name: 'Black T-shirt',
         description:
           'Regular-fit, comfortable T-shirt in lightweight cotton jersey with a classic silhouette. Round, ribbed neck and a straight-cut hem.',
-        image: 'mens black tshirt.png',
+        image: 'mens-black-tshirt.png',
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
@@ -218,7 +218,7 @@ db.once('open', async () => {
             name: 'Blue Cotton T-shirt',
             description:
               'Crew neck thsirt in soft cotton jersey',
-            image: 'womens-blue-tshirt',
+            image: 'womens-blue-tshirt.png',
             category: categories[0]._id,
             price: 8.99,
             sizes: ["S" , "M", "L"],
@@ -293,7 +293,7 @@ db.once('open', async () => {
             name: 'Gray oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'womens-gray-sweater',
+            image: 'womens-gray-sweater.jpeg',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -303,7 +303,7 @@ db.once('open', async () => {
             name: 'Navy blue oversized sweater',
             description:
               'Loose fit sweater in soft, fine fabric. Model with round neck and raglan sleeves. Ribbed trim around collar, cuffs and hem.',
-            image: 'womens-blue-sweater',
+            image: 'womens-blue-sweater.jpeg',
             category: categories[2]._id,
             price: 25.99,
             sizes: ["S" , "M", "L"],
@@ -340,7 +340,7 @@ db.once('open', async () => {
         firstName: 'John',
         lastName: 'Doe',
         email: 'johndoe@hotmailemail.com',
-        password: '12345',
+        password: 'Password123',
         orders: [
             {
                 products:[products[1]._id]
@@ -349,8 +349,6 @@ db.once('open', async () => {
     });
 
     console.log('users seeded');
-
-    
 
   });
   

@@ -20,7 +20,7 @@ const productSchema = new Schema({
     min: 0.99
   },
   sizes: {
-    type: String,
+    type: [String],
   },
   category: {
     type: Schema.Types.ObjectId,
