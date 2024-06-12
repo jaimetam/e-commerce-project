@@ -1,0 +1,19 @@
+{
+  "name": "e-commerce-project",
+  "version": "1.0.0",
+  "description": "An e-commerce website that offers a wide range of basic clothing items.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

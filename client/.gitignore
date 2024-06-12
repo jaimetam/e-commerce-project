@@ -1,13 +1,10 @@
-# Ignore node_modules directory for both server and client
+# Ignore node_modules directory
 node_modules/
 
-# Ignore client build files
-/client/build
+# Ignore build directory
+/build
 
-# Ignore server build files (if any)
-/server/build
-
-# Ignore any environment-specific files
+# Ignore environment-specific files
 .env
 
 # Ignore npm debug log
@@ -34,3 +31,13 @@ yarn-error.log*
 # Ignore any generated files
 /dist/
 /out/
+
+# Ignore coverage directory for testing
+/coverage/
+
+# Ignore local environment settings
+/local.env
+
+# Ignore temporary files
+*.tmp
+*.temp
