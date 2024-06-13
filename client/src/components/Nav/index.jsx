@@ -23,16 +23,19 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row">
+          <div className="spaceBet"></div>
           <li className="mx-1">
             <Link to="/signup">
               Signup
             </Link>
           </li>
+          <div className="spaceBet"></div>
           <li className="mx-1">
             <Link to="/login">
               Login
             </Link>
           </li>
+          <div className="spaceBet"></div>
         </ul>
       );
     }
@@ -42,8 +45,7 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+          MinimalCloth
         </Link>
       </h1>
 
