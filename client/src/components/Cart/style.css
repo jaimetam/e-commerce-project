@@ -24,7 +24,7 @@
   top: .5rem;
   right: .5rem;
   cursor: pointer;
-  color: var(--tertiary);
+  color: var(--);
 }
 
 .cart .close:hover {
@@ -37,7 +37,7 @@
   right: 1%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: #a3a19d;
   border-radius: 50%;
   padding: .25rem;
   width: 50px;
@@ -46,6 +46,10 @@
 
 .cart-closed:hover {
   transform: rotate(8deg);
+  background-color: #c5af92;
+  width: 52px;
+  height: 52px;
+
 }
 
 .cart img {
