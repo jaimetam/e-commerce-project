@@ -22,7 +22,7 @@ db.once('open', async () => {
         name: 'White T-shirt',
         description:
           'Regular-fit, comfortable T-shirt in lightweight cotton jersey with a classic silhouette. Round, ribbed neck and a straight-cut hem.',
-        image: 'white-tshirt.jpg',
+        image: 'mens-white-tshirt.png',
         category: categories[0]._id,
         price: 10.99,
         sizes: ["S" , "M", "L"],
