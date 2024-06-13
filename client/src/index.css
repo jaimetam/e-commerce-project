@@ -7,6 +7,13 @@
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+  /* Variables for MinimalCLoth ⬇  */
+  --googleFont: "Jura", sans-serif;
+  --bodyColor: #d9d9d9;
+  --headerColor: white; 
+  --textColor: #36302b;
+  --priceColor: #c6b3a5;
+
 }
 
 * {
@@ -21,11 +28,12 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: var(--googleFont) !important;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+  background-color: var(--bodyColor);
 }
 
 h1,
@@ -34,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -70,7 +78,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--textColor);
   text-decoration: none;
   font-weight: bold;
 }
@@ -80,23 +88,43 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: var(--headerColor);
 }
 
 header a {
-  color: var(--light);
+  color: var(--textColor);
 }
 
 button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: .4rem;
+  height: 3rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--priceColor);
+  font-family: var(--googleFont);
+  color: var(--headerColor);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+  height: 3rem;
+}
+
+.categoyLinks {
+  font-size: 120%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.categoyLinks:hover {
+  color: rgb(132, 131, 131);
 }
 
 button:hover {
@@ -144,6 +172,12 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+
+.spaceBet {
+  width: 2.5rem;
 }
 
 .space-between {
