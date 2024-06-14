@@ -50,6 +50,10 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  border: 1px solid black;
+  padding: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -128,7 +132,9 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  background-color: #9f8f83;;
+  padding: 0.25rem 1.5rem;
+
 }
 
 button[disabled] {
@@ -138,10 +144,16 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid white;
 }
 
 span[role="img"] {
-  cursor: default;
+  cursor: pointer;
+}
+
+span:hover {
+  font-size: 103%;
 }
 
 form {
@@ -150,11 +162,13 @@ form {
 
 input {
   font-size: 1rem;
-  padding: 0.25rem;
+  margin-left: 25px;
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  text-align: center;
+  padding: auto;
 }
 
 input:focus {
@@ -240,5 +254,10 @@ input:focus {
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+  .categories{
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 }
