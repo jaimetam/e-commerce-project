@@ -1,10 +1,11 @@
 .cart {
   position: fixed;
+  margin: 10px;
   top: 0;
   right: 0;
-  min-width: 20%;
-  max-width: 30%;
-  max-height: 60%;
+  min-width: 30%;
+  max-width: 35%;
+  max-height: 50%;
   background-color: var(--light);
   overflow: auto;
   padding: .5rem;
@@ -17,6 +18,15 @@
   border-bottom: 1px solid var(--dark);
   padding-bottom: .5rem;
   margin: 1rem 0;
+  text-align: center;
+}
+
+.fixedPrice {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+
 }
 
 .cart .close {
@@ -37,19 +47,26 @@
   right: 1%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: #a3a19d;
-  border-radius: 50%;
+  background-color: #c6b3a5;
+  border-radius: 10px;
   padding: .25rem;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  margin-right: 2%;
+  transition: transform 0.2s;
+  transition: ease-in 0.5s;
+  transition: ease-out 0.2s;
 }
 
 .cart-closed:hover {
-  transform: rotate(8deg);
-  background-color: #c5af92;
-  width: 52px;
-  height: 52px;
+  transform: ();
+  background-color: #f29d2e;
+  width: 57px;
+  height: 57px;
+}
 
+.cart-closed:active {
+  transform: scale(0.92);
 }
 
 .cart img {

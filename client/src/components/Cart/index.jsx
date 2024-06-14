@@ -71,31 +71,31 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+      ❌
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>CART</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div className="flex-row space-between">
+          <div className=" fixedPrice">
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <div><i> log in to check out</i></div>
             )}
           </div>
         </div>
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
-            😱
+          
           </span>
-          You haven't added anything to your cart yet!
+          Empty cart :/
         </h3>
       )}
     </div>
