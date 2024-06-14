@@ -654,7 +654,8 @@ db.once('open', async () => {
 
       },
 
-    ]);
+    ]
+  });
 
   console.log('products seeded');
 
@@ -678,5 +679,4 @@ db.once('open', async () => {
 });
 
 console.log('users seeded');
-process.exit()
-});
+process.exit();
