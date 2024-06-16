@@ -242,3 +242,14 @@ input:focus {
     width: 100%;
   }
 }
+
+.center {
+  text-align: center 
+}
+
+.center-input {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 15vh !important;
+}
