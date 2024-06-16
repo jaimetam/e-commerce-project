@@ -3,16 +3,16 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-  name: {
-    type: String,
+  names: {
+    type: [String],
     required: true,
     trim: true
   },
   description: {
     type: String
   },
-  image: {
-    type: String
+  images: {
+    type: [String]
   },
   price: {
     type: Number,
@@ -22,6 +22,9 @@ const productSchema = new Schema({
   sizes: {
     type: [String],
   },
+  // color: {
+  //   type: [String, String],
+  // },
   category: {
     type: Schema.Types.ObjectId,
     ref: 'Category',
