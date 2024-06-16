@@ -299,7 +299,13 @@ db.once('open', async () => {
       category: categories[2]._id,
       price: 25.99,
       sizes: ["S", "M", "L"],
-
+      colors: [
+        "000000",
+        "808080",
+        "000080",
+        "f5f5dc",
+        "000000%ffffff"
+      ]
     },
 
   ]);

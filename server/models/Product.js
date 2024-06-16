@@ -22,9 +22,9 @@ const productSchema = new Schema({
   sizes: {
     type: [String],
   },
-  // color: {
-  //   type: [String, String],
-  // },
+  colors: {
+    type: [String],
+  },
   category: {
     type: Schema.Types.ObjectId,
     ref: 'Category',

@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
+import ProductCarousel from '../components/ProductCarousel';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -81,31 +82,52 @@ function Detail() {
     idbPromise('cart', 'delete', { ...currentProduct });
   };
 
+
+  // let colorButtons = []
+  // if (currentProduct.colors){
+  //   for (let i = 0; i < currentProduct.colors.length; i++){
+  //     if (currentProduct.colors[i].length <= 6) {
+
+  //       colorButtons[i] = <>
+  //         <style> {`backgroundColor: ${currentProduct.colors[i]}`} </style>
+  //         <button></button>
+  //       </>
+  //     }
+  //   }
+  // }
+
   return (
     <>
       {currentProduct && cart ? (
         <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+          <div className='row'>
+            <div className='col-5'>
 
-          <h2>{currentProduct.name}</h2>
+              <ProductCarousel product={currentProduct}/>
+              
+            </div>
 
-          <p>{currentProduct.description}</p>
+            <div className='col-7'>
 
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
+              <Link to="/">← Back to Products</Link>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+              <p>{currentProduct.description}</p>
+
+              <p>
+                <strong>Price:</strong>${currentProduct.price}{' '}
+                <button onClick={addToCart}>Add to Cart</button>
+                <button
+                  disabled={!cart.find((p) => p._id === currentProduct._id)}
+                  onClick={removeFromCart}
+                >
+                  Remove from Cart
+                </button>
+              </p>
+              {/* {colorButtons} */}
+            </div>
+              
+          </div>
+
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
