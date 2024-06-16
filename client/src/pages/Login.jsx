@@ -35,10 +35,10 @@ function Login(props) {
 
       <h2 className='center'>Log in</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="center-input">
+        <div>
 
-          <label htmlFor="email" className='center'>Enter your email address:</label>
-         <br />
+          <label htmlFor="email" className='center'>Enter your email address: </label> 
+          <br />  
           <input 
             className='center-input'
             placeholder="example@email.com"
@@ -49,8 +49,11 @@ function Login(props) {
             
           />
         </div>
+
+        <br />
+        <br />
         
-        <div className="flex-row space-between my-2 py-2">
+        <div className="">
           
           <label htmlFor="pwd" className='center'>Enter your password:</label>
           
