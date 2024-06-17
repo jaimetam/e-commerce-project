@@ -19,7 +19,6 @@
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   min-height: 100%;
@@ -91,11 +90,11 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
+header{
   background: var(--headerColor);
 }
 
-header a {
+header a{
   color: var(--textColor);
 }
 
@@ -177,10 +176,10 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-row {
@@ -277,4 +276,16 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--headerColor);
+  color: var(--textColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 25px 0;
 }
