@@ -259,6 +259,13 @@ input:focus {
     flex-direction: column;
     height: auto;
   }
+  h1{
+    font-size: 1rem;
+    width: fit-content;
+  }
+  .flex-row {
+    display:block;
+  }
 }
 
 .center {

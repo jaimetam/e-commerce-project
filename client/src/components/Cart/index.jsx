@@ -76,9 +76,11 @@ const Cart = () => {
       <h2>CART</h2>
       {state.cart.length ? (
         <div>
-          {state.cart.map((item) => (
-            <CartItem key={item._id} item={item} />
-          ))}
+          <div className="cartItemsBox">
+            {state.cart.map((item) => (
+              <CartItem key={item._id} item={item} />
+            ))}
+          </div>
 
           <div className=" fixedPrice">
             <strong>Total: ${calculateTotal()}</strong>
