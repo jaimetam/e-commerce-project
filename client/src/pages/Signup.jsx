@@ -30,11 +30,15 @@ function Signup(props) {
     });
   };
 
+
   return (
     <div className="container my-1">
       <Link to="/login">← Go to Login</Link>
 
       <h2 className='center'>Sign Up</h2>
+      <p className='center'>Please enter the following information to create your account</p>
+
+      <div className='center-input'> 
       <form onSubmit={handleFormSubmit}>
         <div> 
 
@@ -42,7 +46,7 @@ function Signup(props) {
           <br />
           <input
             className='center-input'
-            placeholder="First"
+            placeholder="First Name"
             name="firstName"
             type="firstName"
             id="firstName"
@@ -54,7 +58,7 @@ function Signup(props) {
           <label htmlFor="lastName" className='center'>Last Name:</label>
           <input
             className='center-input'
-            placeholder="Last"
+            placeholder="Last Name"
             name="lastName"
             type="lastName"
             id="lastName"
@@ -66,7 +70,7 @@ function Signup(props) {
           <label htmlFor="email" className='center'>Email:</label>
           <input
             className='center-input'
-            placeholder="youremail@test.com"
+            placeholder="example@email.com"
             name="email"
             type="email"
             id="email"
@@ -75,10 +79,10 @@ function Signup(props) {
         </div>
         <br />
         <div>
-          <label htmlFor="pwd" className='center'>Password:</label>
+          <label htmlFor="pwd" className='center'>Password (must be 8 characters or more):</label>
           <input
             className='center-input'
-            placeholder="******"
+            placeholder="********"
             name="password"
             type="password"
             id="pwd"
@@ -86,10 +90,11 @@ function Signup(props) {
           />
         </div>
         <br />
-        <div className="flex-row flex-end">
+        <div className="center-input">
           <button type="submit">Submit</button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

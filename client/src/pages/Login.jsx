@@ -29,11 +29,17 @@ function Login(props) {
     });
   };
 
+  
+
   return (
     <div className="container my-1">
       <Link to="/signup">← Go to Signup</Link>
 
       <h2 className='center'>Log in</h2>
+      <p className='center'>Log into your account to start shopping!</p>
+     
+     <div> </div>
+     <div className='center-input'> 
       <form onSubmit={handleFormSubmit}>
         <div>
 
@@ -51,9 +57,8 @@ function Login(props) {
         </div>
 
         <br />
-        <br />
         
-        <div className="">
+        <div>
           
           <label htmlFor="pwd" className='center'>Enter your password:</label>
           
@@ -66,16 +71,19 @@ function Login(props) {
             onChange={handleChange}
           />
         </div>
+        <br />
         {error ? (
           <div>
             <p className="error-text">Incorrect credentials</p>
           </div>
         ) : null}
-        <div className="flex-row flex-end">
+        <div className="center-input">
           <button type="submit">Submit</button>
         </div>
       </form>
     </div>
+    </div>
+    
   );
 }
 

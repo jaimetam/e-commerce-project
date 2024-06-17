@@ -248,7 +248,7 @@ input:focus {
 }
 
 .center-input {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
