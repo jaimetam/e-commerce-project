@@ -261,3 +261,13 @@ input:focus {
     height: auto;
   }
 }
+
+.center {
+  text-align: center 
+}
+
+.center-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

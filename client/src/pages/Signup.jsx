@@ -30,56 +30,71 @@ function Signup(props) {
     });
   };
 
+
   return (
     <div className="container my-1">
       <Link to="/login">← Go to Login</Link>
 
-      <h2>Signup</h2>
+      <h2 className='center'>Sign Up</h2>
+      <p className='center'>Please enter the following information to create your account</p>
+
+      <div className='center-input'> 
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
+        <div> 
+
+          <label htmlFor="firstName" className='center'>First Name:</label>
+          <br />
           <input
-            placeholder="First"
+            className='center-input'
+            placeholder="First Name"
             name="firstName"
             type="firstName"
             id="firstName"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="lastName">Last Name:</label>
+        <br/>
+        <div>
+          <label htmlFor="lastName" className='center'>Last Name:</label>
           <input
-            placeholder="Last"
+            className='center-input'
+            placeholder="Last Name"
             name="lastName"
             type="lastName"
             id="lastName"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
+        <br />
+        <div>
+          <label htmlFor="email" className='center'>Email:</label>
           <input
-            placeholder="youremail@test.com"
+            className='center-input'
+            placeholder="example@email.com"
             name="email"
             type="email"
             id="email"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
+        <br />
+        <div>
+          <label htmlFor="pwd" className='center'>Password (must be 8 characters or more):</label>
           <input
-            placeholder="******"
+            className='center-input'
+            placeholder="********"
             name="password"
             type="password"
             id="pwd"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row flex-end">
+        <br />
+        <div className="center-input">
           <button type="submit">Submit</button>
         </div>
       </form>
+    </div>
     </div>
   );
 }
