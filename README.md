@@ -2,7 +2,7 @@
 
 ## Description
 
-MinimalCloth is an e-commerce website that offers a wide range of basic clothing items. Our platform provides a seamless shopping experience with easy navigation and secure transactions.
+MinimalCloth is an e-commerce website that offers a wide range of basic clothing items. Our platform provides a seamless shopping experience with easy navigation and secure transactions. This store takes the hassle out of shopping by offering 5 items in three categories: t-shirts, pants and sweaters for both men and women. Check out the items in each section and choose the basics that you like the most!
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ MinimalCloth is an e-commerce website that offers a wide range of basic clothing
 
 ## Usage
 
-_Placeholder text._
+To buy through the MinimalCloth website, first click the link: (deployed website link). You will be directed to the website and you can get to shopping right away. Once you are in the website, browse the section you are interested in and click on the item of your choice. Once you choose an item or items, click the checkout button. 
 
 ## Credits
 
