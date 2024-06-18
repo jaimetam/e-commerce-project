@@ -9,8 +9,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
 
-
-const stripePromise = loadStripe('pk_test_51PSicRRuLkaN3TAKWjX7kUAK6T95m7uhE8HqSBeyPgS1J7qLhIyZJ2ARUHoOQXkvZPzYvg1QjZz2iGH9uQbBLUEH00U4dNAFaj');
+const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
@@ -18,7 +17,6 @@ const Cart = () => {
 
   useEffect(() => {
     if (data) {
-      console.log('Checkout data received:', data);
       stripePromise.then((res) => {
         res.redirectToCheckout({ sessionId: data.checkout.session });
       });
@@ -73,28 +71,31 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        ❌
+      ❌
       </div>
       <h2>CART</h2>
       {state.cart.length ? (
         <div>
-          {state.cart.map((item) => (
-            <CartItem key={item._id} item={item} />
-          ))}
+          <div className="cartItemsBox">
+            {state.cart.map((item) => (
+              <CartItem key={item._id} item={item} />
+            ))}
+          </div>
 
-          <div className="fixedPrice">
+          <div className=" fixedPrice">
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <div><i>log in to check out</i></div>
+              <div><i> log in to check out</i></div>
             )}
           </div>
         </div>
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
+          
           </span>
           Empty cart :/
         </h3>
