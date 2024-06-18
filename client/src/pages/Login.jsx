@@ -46,7 +46,7 @@ function Login(props) {
           <label htmlFor="email" className='center'>Enter your email address: </label> 
           <br />  
           <input 
-            className='center-input'
+            className='input'
             placeholder="example@email.com"
             name="email"
             type="email"
@@ -59,11 +59,16 @@ function Login(props) {
         <br />
         
         <div>
+
+          <div>
+
+            
+          </div>
           
-          <label htmlFor="pwd" className='center'>Enter your password:</label>
+          <label htmlFor="pwd" className='center-input'>Enter your password:</label>
           
           <input 
-            className='center-input'
+            className='input'
             placeholder="******"
             name="password"
             type="password"
@@ -77,7 +82,7 @@ function Login(props) {
             <p className="error-text">Incorrect credentials</p>
           </div>
         ) : null}
-        <div className="center-input">
+        <div className="input">
           <button type="submit">Submit</button>
         </div>
       </form>
