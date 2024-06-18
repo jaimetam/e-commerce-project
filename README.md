@@ -19,7 +19,7 @@ MinimalCloth is an e-commerce website that offers a wide range of basic clothing
 
 To buy through the MinimalCloth website, first click the link: (deployed website link). Once you are in the website, create your account or log into your account using the Sign up or Log in buttons. Once in, browse all of the sections and click on the item or items of your choice.
 
-![alt text](./client/public/images/image.png)
+![Screenshot of the homepage of the website](./client/public/images/image.png)
 
 Once you choose an item or items, click the checkout button, then click on the cart on the top right corner to see all of the items you picked out. Once you are ready to check out, click on the checkout button and proceed to enter the information you are prompted for.
 
