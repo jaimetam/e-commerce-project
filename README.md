@@ -23,12 +23,12 @@ To buy through the MinimalCloth website, first click the link: (deployed website
 
 Once you choose an item or items, click the checkout button, then click on the cart on the top right corner to see all of the items you picked out. Once you are ready to check out, click on the checkout button and proceed to enter the information you are prompted for.
 
-![alt text](./client/public/images/image-1.png)
+![Screenshot of the cart feature of the website](./client/public/images/image-1.png)
 
 
 Our app can be used on desktop or mobile!
 
-![alt text](./client/public/images/image-2.png)
+![Screenshot of the website's responsiveness for mobile users](./client/public/images/image-2.png)
 
 ## Credits
 
