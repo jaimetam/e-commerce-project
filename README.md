@@ -13,7 +13,7 @@ MinimalCloth is an e-commerce website that offers a wide range of basic clothing
 
 ## Installation
 
-[Click here to view the deployed website!](placeholder/) 👕
+[Click here to view the deployed website!](https://e-commerce-project-udvs.onrender.com/) 👕
 
 ## Usage
 

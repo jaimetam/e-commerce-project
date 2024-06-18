@@ -147,6 +147,35 @@ img {
   border: 1px solid white;
 }
 
+.backToProd {
+  font-size: 150%;
+}
+
+.currentProductBox{
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.currentProductDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: start;
+  padding: 15px;
+}
+
+.currentPodDescText {
+  text-align: justify;
+}
+
+.imageCurrentProd {
+ height: 100%;
+ width: 100%;
+}
+
 span[role="img"] {
   cursor: pointer;
 }
@@ -265,6 +294,13 @@ input:focus {
   }
   .flex-row {
     display:block;
+  }
+  .currentProductBox {
+    flex-direction: column;
+  }
+  .currentProductDescription {
+    width: 100%;
+    font-size: 70%;
   }
 }
 
