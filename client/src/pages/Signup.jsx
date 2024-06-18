@@ -45,7 +45,7 @@ function Signup(props) {
           <label htmlFor="firstName" className='center'>First Name:</label>
           <br />
           <input
-            className='center-input'
+            className='input'
             placeholder="First Name"
             name="firstName"
             type="firstName"
@@ -55,9 +55,9 @@ function Signup(props) {
         </div>
         <br/>
         <div>
-          <label htmlFor="lastName" className='center'>Last Name:</label>
+          <label htmlFor="lastName" className='center-input'>Last Name:</label>
           <input
-            className='center-input'
+            className='input'
             placeholder="Last Name"
             name="lastName"
             type="lastName"
@@ -67,9 +67,9 @@ function Signup(props) {
         </div>
         <br />
         <div>
-          <label htmlFor="email" className='center'>Email:</label>
+          <label htmlFor="email" className='center-input'>Email:</label>
           <input
-            className='center-input'
+            className='input'
             placeholder="example@email.com"
             name="email"
             type="email"
@@ -79,9 +79,9 @@ function Signup(props) {
         </div>
         <br />
         <div>
-          <label htmlFor="pwd" className='center'>Password (must be 8 characters or more):</label>
+          <label htmlFor="pwd" className='center-input'>Password (must be 8 characters or more):</label>
           <input
-            className='center-input'
+            className='input'
             placeholder="********"
             name="password"
             type="password"
